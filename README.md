@@ -64,7 +64,7 @@ email: greatlyhizkia@outlook.com
 
 ***
 
-\#DataAnalysis \#SQLServer \#DataWrangling \#ProjectPortfolio \#AdvancedSQL \#Kaggle
+
 
 
 
