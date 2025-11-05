@@ -22,11 +22,11 @@ The entire data preparation pipeline was executed end-to-end within SQL Server, 
 2.  **Duplicate Handling (Key Step!):** Data integrity was ensured by identifying and removing duplicate records based on **'course\_id'**. This was achieved using the **`ROW_NUMBER() OVER (PARTITION BY course_id...)`** Window Function technique.
 
 ## 🔍 Key Insights & Findings
-*(This section should be filled with your most compelling results from the SQL queries.)*
 
-* **Optimal Engagement Duration:** Courses within the **[X] to [Y] hour** range showed the highest average review-to-subscriber ratio, indicating a 'sweet spot' for content depth and learner completion.
-* **Pricing Power:** The **[Subject Name]** category commanded the highest average price, yet maintained a top-tier subscriber count, suggesting inelastic demand in this domain.
+* **Pricing Power:** The **Web Development** and **Business Finance** category commanded the highest average price, yet maintained a top-tier subscriber count, suggesting inelastic demand in this domain.
+* **Content Duration vs. Subscribers:** Analysis reveals a clear *Sweet Spot* for course length, demonstrating that content **under 5 hours** and content **over 15 hours** attract lower average subscriber numbers. The most successful duration range is **10 to 15 hours**, where courses yield the highest average subscriber count at **~6,746 subscribers** per course. This suggests that learners on the platform value comprehensive content that is still manageable and goal-oriented, avoiding both overly brief tutorials and extensive, multi-semester commitments.
 * **Free vs. Paid:** While free courses attracted significantly more subscribers, the paid courses generated a higher rate of long-term review engagement, highlighting the correlation between financial commitment and participation.
+* **Markets Based on Difficulty Level:** Analysis of course levels reveals that the vast majority of the market is concentrated in foundational learning. The "All Levels" and "Beginner Level" categories collectively account for 93.2% of the total subscriber base (over 10.9 million subscribers).
 
 ## 💾 Project Structure & Code
 All SQL scripts are organized below, showcasing the analytical progression:
