@@ -94,15 +94,20 @@ GROUP BY level
 -- 6. What is the average number of subscribers and reviews for free vs. paid courses?
 SELECT
     CASE
-        WHEN is_paid = 0 THEN 'Free Course'
         WHEN is_paid = 1 THEN 'Paid Course'
+        WHEN is_paid = 0 THEN 'Free Course'
         ELSE 'Unknown'
     END AS Course_Type,
     COUNT(course_id) AS Total_Courses,
     AVG(num_subscribers) AS Average_Subscribers,
+    CAST(SUM(num_reviews) AS FLOAT) / SUM(num_subscribers) AS Review_Rate,
     AVG(num_reviews) AS Average_Reviews
-FROM udemy_courses
-GROUP BY is_paid;
+FROM
+    udemy_courses
+GROUP BY
+    is_paid
+ORDER BY
+    Review_Rate DESC;
 
 -- 7. Average Subscribers Based on Content Duration (In 5-Hour Groups)
 SELECT
@@ -128,3 +133,4 @@ GROUP BY
     YEAR(CAST(published_timestamp AS DATE))
 ORDER BY
     Published_Year;
+
