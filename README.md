@@ -53,7 +53,7 @@ All SQL scripts are organized below, showcasing the analytical progression:
 | File | Description |
 | :--- | :--- |
 | `udemy_courses.csv` | Original raw dataset from Kaggle. |
-| `udemy_analysis_queries.sql` | Contains all analytical queries (e.g., MoM trends, pricing distribution, subscriber ratios) using **CTE** and **Window Functions**. |
+| `udemy_analysis_queries.sql` | Contains all analytical queries (e.g., pricing distribution, subscriber ratios) using **CTE** and **Window Functions**. |
 
 ## 🚀 View the Full Analysis
 Full project code and detailed SQL scripts are available in the repository folders. I'm open to connect and discuss this project! 👇
