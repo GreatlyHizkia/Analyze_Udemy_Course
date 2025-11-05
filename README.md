@@ -20,7 +20,6 @@ The entire data preparation pipeline was executed end-to-end within SQL Server, 
 
 1.  **Column Removal:** The non-essential **'url'** column was dropped to simplify the data model.
 2.  **Duplicate Handling (Key Step!):** Data integrity was ensured by identifying and removing duplicate records based on **'course\_id'**. This was achieved using the **`ROW_NUMBER() OVER (PARTITION BY course_id...)`** Window Function technique.
-3.  
 
 ## 🔍 Key Insights & Findings
 *(This section should be filled with your most compelling results from the SQL queries.)*
@@ -34,13 +33,14 @@ All SQL scripts are organized below, showcasing the analytical progression:
 
 | File | Description |
 | :--- | :--- |
-| `data/udemy_courses.csv` | Original raw dataset from Kaggle. |
-| `sql/udemy_analysis_queries.sql` | Contains all analytical queries (e.g., MoM trends, pricing distribution, subscriber ratios) using **CTE** and **Window Functions**. |
+| `udemy_courses.csv` | Original raw dataset from Kaggle. |
+| `udemy_analysis_queries.sql` | Contains all analytical queries (e.g., MoM trends, pricing distribution, subscriber ratios) using **CTE** and **Window Functions**. |
 
 ## 🚀 View the Full Analysis
 Full project code and detailed SQL scripts are available in the repository folders. I'm open to connect and discuss this project! 👇
 
-[Your GitHub Repository Link Here]
+LinkedIn: [(https://www.linkedin.com/in/greatlyhizkiamanua/)]
+email: greatlyhizkia@outlook.com
 
 ***
 
