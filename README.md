@@ -8,7 +8,6 @@ This project analyzes a rich dataset of Udemy courses (sourced from Kaggle) to i
 2.  Explore pricing trends across various subject categories and difficulty levels.
 3.  Examine student engagement patterns through enrollment numbers and content duration.
 4.  Compare free vs. paid courses to understand the impact on accessibility and learner participation.
-5.  Determine Monthly Sales Trends (MoM) for popular categories.
 
 ## 🛠️ Technology Stack
 * **Data Source:** Kaggle (`udemy_courses.csv`)
